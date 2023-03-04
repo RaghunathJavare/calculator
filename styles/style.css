@@ -1,0 +1,38 @@
+
+#box{
+    padding:3% 15%;
+      
+    }
+    
+    .container-fluid{
+        height:40rem;
+        display:flex;
+        justify-content:center;
+     
+    
+    }
+    
+    .calculator-box{
+        margin:auto auto;
+        height:400px;
+        width:300px;
+        background-color:black;
+        color:#fff;
+    }
+    
+    header{
+        height:10rem;
+        background-color:blue;
+    }
+    
+    .header-text{
+        position:relative;
+        top:6rem;
+        font-size:3rem;
+        text-align:right;
+        
+    
+        
+    }
+    
+    
