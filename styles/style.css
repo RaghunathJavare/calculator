@@ -1,50 +1,44 @@
 /* section background */
 
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-
-#box {
-  background-color: #222;
-}
-
-.top{
+.top {
   background-color: blue;
-
 }
 header {
   height: 16rem;
 }
 
-
-.header-text{
+.header-text {
   position: absolute;
   right: 1rem;
-  top: 6rem;
-  font-size: 6rem;
-  display: inline-block;
+  top: 10rem;
+  font-size: 4rem;
+  text-align: right;
+  background: none;
+  border: none;
 }
 
-.caculator-box{
-  background-color: #222;
-}
-p{
+p {
   padding: 1% 0;
   text-align: center;
   color: #fff;
   font-size: 3rem;
-  
 }
 
-p:hover{
+p:hover {
   background-color: #222222d1;
 }
 
-.button-grey{
+.button {
   background: none;
   border: none;
   color: #fff;
+}
+
+.backspace-icon {
+  font-size: 5rem;
 }
