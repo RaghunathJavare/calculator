@@ -14,6 +14,7 @@ header {
 
 .header-text {
   position: absolute;
+  color: #eee;
   right: 1rem;
   top: 10rem;
   font-size: 4rem;
@@ -41,4 +42,18 @@ p:hover {
 
 .backspace-icon {
   font-size: 5rem;
+}
+/* media quarys  */
+
+@media (max-width: 470px) {
+  .backspace-icon{
+    font-size: 2.5rem;
+
+  }
+  p {
+    font-size: 2rem;
+  }
+  .header-text{
+    font-size: 3rem;
+  }
 }
