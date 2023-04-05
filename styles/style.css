@@ -1,0 +1,25 @@
+.input__box {
+  background-color: rgba(0, 0, 0, 0.777);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.input__result {
+  text-align: right;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.buttons {
+  background: none;
+  border: none;
+  padding: 7%;
+  color: #fff;
+  font-size: 2rem;
+  width: 100%;
+}
+.col {
+  border: 1px solid #fff;
+}
+
