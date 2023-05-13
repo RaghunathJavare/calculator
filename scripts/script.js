@@ -9,25 +9,23 @@ const equal = document.querySelector(".equal");
 let value;
 
 numberContainer.addEventListener("click", function (e) {
-  // userValue
-
-  const userValue = e.target.value;
+  e.preventDefault();
 
   // if value is not a number
+  if (e.target.classList.contains("buttons"))
+    // display numbers
+    value = userInputValue.value += e.target.value;
 
-  if (!userValue) {
-    return userValue;
+  // operation with numbers
+
+  if (e.target.classList.contains("btn__backspace")) {
+    // removing last charecter
+    value = value.slice(0, -1);
+    userInputValue.value = value
   }
 
-  value = userInputValue.value += userValue;
+  if (e.target.value === "AC") return (userInputValue.value = "");
 
-  if (userValue === "AC") return (userInputValue.value = "");
+  if (e.target.classList.contains("equal"))
+    return (value = userInputValue.value = `${eval(value)}`);
 });
-
-// display result
-
-const result = function () {
-value = userInputValue.value = `${eval(value)}`
-};
-
-equal.addEventListener("click", result);

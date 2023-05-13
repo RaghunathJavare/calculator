@@ -4,7 +4,6 @@
   width: 100%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.777);
-
 }
 .user__input {
   text-align: right;
@@ -13,7 +12,7 @@
   border: none;
   background-color: #fff;
 }
-.btn__backspace{
+.btn__backspace {
   font-size: 2rem;
 }
 
@@ -22,16 +21,21 @@
   border: none;
   padding: 7%;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 100%;
 }
 
-.buttons:hover{
+.buttons:hover {
   background-color: #ffffff2b;
   transition: 0.4s;
 }
 
-
-.row{
+.row {
   height: 5rem;
+}
+
+@media (max-width: 500px) {
+  .row {
+    height: 4rem;
+  }
 }
