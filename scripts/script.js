@@ -1,10 +1,6 @@
 const userInputValue = document.querySelector(".user__input");
 
-const btnBackspace = document.querySelector(".btn__backspace");
-
 const numberContainer = document.querySelector(".number__container");
-
-const equal = document.querySelector(".equal");
 
 let value;
 
@@ -21,11 +17,13 @@ numberContainer.addEventListener("click", function (e) {
   if (e.target.classList.contains("btn__backspace")) {
     // removing last charecter
     value = value.slice(0, -1);
-    userInputValue.value = value
+    userInputValue.value = value;
   }
+  //  removeing all numbers
 
-  if (e.target.value === "AC") return (userInputValue.value = "");
+  if (e.target.value === "AC") userInputValue.value = "";
 
-  if (e.target.classList.contains("equal"))
-    return (value = userInputValue.value = `${eval(value)}`);
+  if (e.target.classList.contains("equal") && value)
+
+    value = userInputValue.value = `${eval(value)}`;
 });
