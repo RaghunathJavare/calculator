@@ -1,9 +1,9 @@
-body{
-  font-family:Verdana;
+body {
+  font-family: Verdana;
+  background-color: #000000;
 }
 
-
-.top__container {
+.bottom__container {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -15,8 +15,8 @@ body{
   width: 100%;
   font-size: 3rem;
   border: none;
-  color: black;
-  background-color: #fff;
+  color: #fff;
+  background: transparent;
 }
 .btn__backspace {
   font-size: 2rem;
@@ -25,7 +25,7 @@ body{
 .buttons {
   background: none;
   border: none;
-  padding: 8%;
+  padding: 7%;
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
@@ -33,15 +33,26 @@ body{
 }
 
 
+.first__row {
+  border-top: 1px solid #ffffff71;
+}
+
 .row {
   height: 5rem;
 }
+
+.icons {
+  color: rgb(207, 28, 204);
+}
+
 
 @media (max-width: 500px) {
   .row {
     height: 4.5rem;
   }
-}
-.icons{
-  color: rgb(207, 28, 204);
+  
+.btn__equal{
+  background-color:rgba(105, 57, 125, 0.541) ;
+  border-radius: 5rem;
+  }
 }

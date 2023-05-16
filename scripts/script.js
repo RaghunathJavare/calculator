@@ -1,27 +1,31 @@
 const userInput = document.querySelector(".user__input");
 const numberContainer = document.querySelector(".number__container");
 
+//////////////////////////////////////////////////////////////////////////////////////////
+
 let value;
 
 numberContainer.addEventListener("click", function (e) {
   e.preventDefault();
+  const event = e.target;
 
   // if value is not a number
-  if (e.target.classList.contains("buttons"))
+  if (event.classList.contains("buttons"))
     // display numbers
-    value = userInput.value += e.target.value;
+    value = userInput.value += event.value;
 
   // operation with
 
-  if (e.target.classList.contains("btn__backspace")) {
+  if (event.classList.contains("btn__backspace")) {
+    if (!value) return;
     // removing last charecter
     value = value.slice(0, -1);
     userInput.value = value;
   }
   //  removeing all numbers
 
-  if (e.target.classList.contains("del__num")) userInput.value = "";
+  if (event.classList.contains("del__num")) userInput.value = "";
 
-  if (e.target.classList.contains("equal") && value)
+  if (event.classList.contains("btn__equal") && value)
     value = userInput.value = `${eval(value)}`;
 });
