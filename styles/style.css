@@ -52,7 +52,9 @@ body {
   }
   
 .btn__equal{
-  background-color:rgba(105, 57, 125, 0.541) ;
+  /* background-color:rgba(105, 57, 125, 0.541) ; */
+  background-color: #E11299;
+  color: #000000;
   border-radius: 5rem;
   }
 }
