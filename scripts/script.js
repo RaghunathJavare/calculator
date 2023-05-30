@@ -4,10 +4,15 @@ const delNum = document.querySelector(".del__num");
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
+
 let value = "";
 userInput.value = 0;
 
 // inserting value
+
+
+// Funtions 
+
 const init = function (value) {
   userInput.value = value;
 };
@@ -22,6 +27,8 @@ const reuse = function (event) {
 };
 
 // Inserting a calculation
+
+// Event handelers 
 
 numberContainer.addEventListener("click", function (e) {
   e.preventDefault();
